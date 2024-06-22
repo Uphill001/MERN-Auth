@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: 'https://mern-auth-api-lovat.vercel.app', // Replace with your frontend URL
+  origin: 'https://mern-auth-api-lovat.vercel.app/', // Replace with your frontend URL
   credentials: true, // Allows sending cookies with CORS
 };
 app.use(cors(corsOptions));
