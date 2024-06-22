@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://mern-auth-ivory.vercel.app/',
+        target: 'https://mern-auth-ivory.vercel.app',
         changeOrigin: true,
       },
     },
