@@ -1,6 +1,6 @@
 import path from 'path';
 import express from 'express';
-import cors from 'cors';
+// import cors from 'cors';
 import dotenv from'dotenv';
 import connectDB from './config/db.js'
 dotenv.config();
@@ -17,11 +17,11 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const corsOptions = {
-  origin: 'https://mern-auth-gamma.vercel.app/', // Replace with your frontend URL
-  credentials: true, // Allows sending cookies with CORS
-};
-app.use(cors(corsOptions));
+// const corsOptions = {
+//   origin: 'https://mern-auth-gamma.vercel.app/', // Replace with your frontend URL
+//   credentials: true, // Allows sending cookies with CORS
+// };
+// app.use(cors(corsOptions));
 
 
 app.use('/api/users', userRoutes);
